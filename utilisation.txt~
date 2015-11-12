@@ -2,18 +2,29 @@
 ## Manuel d'installation de git pour windows ##
 ###############################################
 
+
+## Téléchargement de git
 1) Télécharger git sur le site https://git-scm.com/
 -> Lancer l'installateur et pas oublier d'inclure la
 commande git dans le path.
 
+## Dossier du projet
 2) Créer un dossier (celui qui va contenir le projet)
 
+## Initialiser le git
 3) Click droit -> git bash here (à l'endroit où se situe 
 le dossier du projet)
 
+## Créer un clone du projet
 4) git clone [url_projet] [nom_dossier]
 
+## Aller dans le dossier
 5) cd [nom_dossier]
+
+## Récupération des fichiers de sa branche
+6) git pull origin [nom_branche]
+
+## End ! prêt à travailler
 
 
 ##############################################
@@ -51,4 +62,34 @@ git commit -m ["Description des modification"]
 
 ## Push les derniers commits sur le git
 git push origin [Branch]
+
+
+##############################################
+##        Complément sur git 	            ##
+##############################################
+
+## vous souhaitez créer votre branche pour travailler appart
+et ne pas surcharger la branche globale (utile en cas de développement important
+-> création d'une branche
+git checkout -b [nom_branche]
+
+(travailler sur sa branche et pousser les fichiers sur sa branche perso -> la branche globale restera inchangée)
+
+## vous avez fini votre dev sur votre branche et mettre à jour la branche globale
+
+## Récupération de la dernière version sur votre branche
+1) git pull origin [ma_branche]
+
+## Going to la branche Globale
+2) git checkout Global
+
+## Récupérer la dernière version de la branche Globale
+3) git pull origin Global
+
+## Réaliser le merge (ajout de sa branche dans la branche Globale)
+4) git merge [ma_branche]
+
+
+
+
 
